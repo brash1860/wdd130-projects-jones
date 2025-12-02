@@ -1,0 +1,135 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* 1. Page Structure */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc; /* Represents the outer box in the sketch */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 2. Header and Footer (Wavy Lines) */
+        header, footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #e0e0e0;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border-top: 3px solid #333; /* Represents the horizontal lines */
+            border-bottom: 3px solid #333;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* 3. Main Content Layout (Mimics Diagonal/Spaced Layout) */
+        .main-content {
+            display: flex;
+            flex-direction: column; /* Stacks elements for small screens */
+            gap: 40px; /* Space between elements */
+            padding: 20px;
+        }
+        
+        /* Desktop/Larger Screen Layout (Mimics the diagonal placement) */
+        @media (min-width: 768px) {
+            .main-content {
+                /* Use relative positioning to place elements freely */
+                position: relative;
+                height: 600px; /* Gives space for elements to be positioned */
+            }
+
+            .service-description {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 35%; /* Takes up left side as sketched */
+            }
+
+            .img-card-1 {
+                position: absolute;
+                top: 50px;
+                right: 0; /* Placed top right (img 2 in sketch) */
+            }
+
+            .img-card-2 {
+                position: absolute;
+                bottom: 0;
+                left: 30%; /* Placed bottom left/center (img 3 in sketch) */
+            }
+        }
+
+        /* 4. Service Description */
+        .service-description h2 {
+            color: #007bff;
+        }
+
+        /* 5. Image/Card Elements */
+        .img-card-1, .img-card-2 {
+            width: 300px; /* Fixed size for the cards */
+            height: 200px;
+            background-color: #cceeff; /* Light blue placeholder color */
+            border: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1em;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        /* * Basic Reset and Setup */
+      
+        
+        /* Desktop/Larger Screen Layout (Mimics the diagonal placement) */
+        @media (min-width: 768px) {
+            .main-content {
+                /* Use relative positioning to place elements freely */
+                position: relative;
+                height: 600px; /* Gives space for elements to be positioned */
+            }
+
+            .service-description {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 35%; /* Takes up left side as sketched */
+            }
+
+            .img-card-1 {
+                position: absolute;
+                top: 50px;
+                right: 0; /* Placed top right (img 2 in sketch) */
+            }
+
+            .img-card-2 {
+                position: absolute;
+                bottom: 0;
+                left: 30%; /* Placed bottom left/center (img 3 in sketch) */
+            }
+        }
+
+        /* 4. Service Description */
+        .service-description h2 {
+            color: #007bff;
+        }
+
+        /* 5. Image/Card Elements */
+        .img-card-1, .img-card-2 {
+            width: 300px; /* Fixed size for the cards */
+            height: 200px;
+            background-color: #cceeff; /* Light blue placeholder color */
+            border: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1em;
+            text-align: center;
+            box-sizing: border-box; */
